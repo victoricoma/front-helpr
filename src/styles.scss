@@ -8,13 +8,9 @@ $my-primary: mat.define-palette(mat.$deep-purple-palette, 600);
 $my-accent: mat.define-palette(mat.$purple-palette, 800);
 $my-warn: mat.define-palette(mat.$red-palette, 900);
 
-$my-theme: mat.define-light-theme((
-    color: (
-        primary: $my-primary,
-        accent: $my-accent,
-        warn: $my-warn
-    )
-));
+$my-theme: mat.define-light-theme((color: (primary: $my-primary,
+                accent: $my-accent,
+                warn: $my-warn )));
 
 @include mat.all-component-themes($my-theme);
 
@@ -22,12 +18,14 @@ $my-theme: mat.define-light-theme((
     box-sizing: border-box;
 }
 
-html, body { 
-    height: 100%; 
+html,
+body {
+    height: 100%;
 }
 
-body { 
-    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .container {
@@ -38,4 +36,13 @@ body {
 
 .full-width {
     width: 100%;
+}
+
+df-messenger {
+    --df-messenger-bot-message: #9e46fc;
+    --df-messenger-user-message: #405dec;
+    --df-messenger-button-titlebar-color: #5E35B1;
+    --df-messenger-chat-background-color: #fff;
+    --df-messenger-font-color: #fff;
+    --df-messenger-minimized-chat-close-icon-color: #fff;
 }
