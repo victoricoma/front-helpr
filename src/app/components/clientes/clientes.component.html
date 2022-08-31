@@ -14,15 +14,15 @@
 
         <div class="mat-elevation-z8">
 
-            <table mat-table [dataSource]="dataSource">
+            <table mat-table [dataSource]="dataSource" >
 
                 <ng-container matColumnDef="id">
-                    <th mat-header-cell *matHeaderCellDef> Id </th>
-                    <td mat-cell *matCellDef="let cliente"> {{cliente.id}} </td>
+                    <th mat-header-cell *matHeaderCellDef > Id </th>
+                    <td mat-cell *matCellDef="let cliente" > {{cliente.id}} </td>
                 </ng-container>
 
                 <ng-container matColumnDef="nome">
-                    <th mat-header-cell *matHeaderCellDef> Nome </th>
+                    <th mat-header-cell *matHeaderCellDef > Nome </th>
                     <td mat-cell *matCellDef="let cliente"> {{cliente.nome}} </td>
                 </ng-container>
 
@@ -67,4 +67,6 @@
             </mat-paginator>
         </div>
     </ng-container>
+    <br>
+    <img src="https://user-images.githubusercontent.com/31005408/176497181-2f1cab22-024c-459c-b1ea-2f90d19d373c.png" width="100%" height="300px " alt="img_tabela">
 </nav-bar>
